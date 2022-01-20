@@ -1,0 +1,40 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #0094ff;
+}
+h3 {
+  color: #0094ff
+}
+table {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+table thead {
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  color: #666666
+}
+table tbody tr {
+  height: 40px;
+  line-height: 40px;
+  color: #333333
+}
+table,table tr th, table tr td {
+  border:1px solid #dddddd;
+}
+.text-num {
+  width: 100px;
+}
+.text-main {
+  color: #0094ff
+}
+table .empty {
+  height: 50px;
+  line-height: 50px;
+}

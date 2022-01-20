@@ -1,0 +1,33 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/result.css')
+  body
+    h3 反馈记录
+    table
+      thead 
+        th 序号
+        th 系统名称
+        th 系统地址 
+        th 反馈次数
+        th 反馈日期
+        th 首次反馈时间
+        th 最后一次反馈时间
+      tbody
+        if records.length > 0
+          each record, $index in records
+            tr 
+              td(class="text-num")=$index + 1
+              td(class="text-main")=record.sysName
+              td(class="text-main")
+                a(href="//" + record.hostname)=record.hostname
+              td=record.feedback_count
+              td=record.feedback_date
+              td=record.feedback_firstTime
+              td=record.feedback_lastTime
+        else 
+          tr(class="empty")
+            td(colspan="7") 暂无数据
+        
+
